@@ -1,78 +1,100 @@
-@import	"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
-body	{
-	background-image: url(2020.jpg);
-	margin: 0;
-	padding: 0;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: absolute;
-	background-attachment: fixed;
-	font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-	margin-bottom: 10px;
-	padding:0;
-	top: 50%;
-	left: 50%;
-	border-bottom: 6px solid #8B4513;
-	font-family: aril;
-	font-size: 50px;
-	
-
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.container {
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 2rem;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
 
-.container	{
-	position: absolute;
-	top:50%;
-	left: 50%; 
-	transform: translate(-50%, -50%);
-	background:rgba(0,0,0,0.5);
-	padding: 110px;
-	width: 270px;
-	box-shadow: 0 0 10px 5px black;
+.container p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.container h1 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .textbox {
-	margin: 25px 0;
-	padding: 0;
-	width: 200px;
-	overflow: hidden;
-	border-bottom: 3px solid #8B4513;
-}
-.textbox i{
-	width: 25px;
-	float: left;
-	text-align: center;
-}
-.textbox input{
-	border: none;
-	outline: none;
-	background:none;
-	color: white;
- 	font-size: 15px;
-	width: 50%;
-	float: left;
-	margin: 0 10px;
-}
-.btn{
-	width: 100%;
-	background:none;
-	border: 2px solid  #8B4513;
-	color: white;
-	padding: 10px;
-	font-size: 15px;
-	cursor: pointer;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: #f9f9f9;
 }
 
-a {
-	color:white;
+.textbox i {
+  margin-right: 0.5rem;
+  color: #555;
 }
 
-a:hover {
-	color: green;
-	font-family: arial;
-	font-size: 20px;
+.textbox input {
+  border: none;
+  background: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
 }
 
+.btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.container a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
+.navigate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.navigate span {
+  font-weight: bold;
+}
+
+.navigate a {
+  padding: 0px 1rem;
+}
